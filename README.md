@@ -47,7 +47,9 @@
 
 - Using the Project Serum Anchor Framework to build Solana dapps
 - How Solana smart contracts are deployed as "Data Files" and these data files receive SOL to run compute (compared to the EVM-compatible frameworks where a wallet "does work to" or "on behalf of" a smart contract)
+- When you deploy your Rust smart contracts, you can also interact with them via a JS client to create an item (i.e. a social media post), and generate a public key for that item and then use that public key to update its state.
 
 ## Projects Built:
 
 - GM App (with Anchor Framework): [`gm-anchor`](gm-anchor)
+- Social Media App (with Anchor): [`solana-social`](solana-social)
