@@ -3,7 +3,7 @@
 
 # <b> Chainlink x Solana 2022 Bootcamp </b>
 
-Technical bootcamp put on by the Chainlink DevRel Team to educate on the fundamental building blocks of building dapps on the Solana blockchain, using Rust as the smart contract programming language, and implementing Chainlink's verifiable oracle networks to verify and validate off-chain data on-chain on the blockchain.
+2022 Technical Blockchain Developer Bootcamp program put on by the Chainlink DevRel Team to educate on the fundamental building blocks of building dapps on the Solana blockchain, using Rust as the smart contract programming language, and implementing Chainlink's verifiable oracle networks to verify and validate off-chain data on-chain on the blockchain.
 
 ## Tech Stack:
 
