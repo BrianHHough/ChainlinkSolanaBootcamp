@@ -1,4 +1,4 @@
-<img src="./assets//ChainlinkSolanaBootcamp.png" width="90%" alt="Chainlink Oracle Technical Bootcamp Solana Blockchain Rust Lang">
+<img src="./assets//ChainlinkSolanaBootcamp.png" width="65%" alt="Chainlink Oracle Technical Bootcamp Solana Blockchain Rust Lang">
 <!-- ![ChainlinkSolana](./assets//ChainlinkSolanaBootcamp.png) -->
 
 # <b> Chainlink x Solana 2022 Bootcamp </b>
@@ -48,8 +48,18 @@
 - Using the Project Serum Anchor Framework to build Solana dapps
 - How Solana smart contracts are deployed as "Data Files" and these data files receive SOL to run compute (compared to the EVM-compatible frameworks where a wallet "does work to" or "on behalf of" a smart contract)
 - When you deploy your Rust smart contracts, you can also interact with them via a JS client to create an item (i.e. a social media post), and generate a public key for that item and then use that public key to update its state.
+- Chainlink solves the data verification issue, especially in reaching consensus, off-chain so that it can be brought into a smart contract even though the blockchain is deterministic.
+- Chainlink solves the Oracle Problem by:
+  - allowing off-chain data to be verified in a deterministic way (something that the blockchain natively cannot do).
+  - getting external data or computation into smart contracts directly
+- When I ran the contract of the Chainlink price feed for SOL/USD - I received `Price Is: 135.51092534` in the console.
+  - At the same time, CoinMarketCap reported $135.47, CoinGecko at $135.57, Coinbase at $135.46, and Gemini at $135.61.
+  - Between these 4 prices, they can't "all be right" so what Chainlink's verified data feeds provides is an independently verifiable consensus answer around something that could be right or wrong by many different groups of people at once.
+- Chainlink brings with it a decentralized Oracle Network, run & operated by independent & sybil resistant node operators to reach consensus (agreement) about a certain data, item, or computation.
+  - This is how we can get one, single Solana price in our Rust Lang smart contract, which is right in the middle of these other data points - which makes sense for how data can (and should) be reported, especially if it can differ between parties that could lead to costly/egregious mistakes or errors.
 
 ## Projects Built:
 
 - GM App (with Anchor Framework): [`gm-anchor`](gm-anchor)
 - Social Media App (with Anchor): [`solana-social`](solana-social)
+- Chainlink Price Data Feeds Dapp: [`solana-chainlink`](solana-chainlink)
